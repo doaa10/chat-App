@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 450px;
+    border-radius: 16px;
+}
+.form{
+    padding: 25px 30px;
+}
+.title{
+font-size: 25px;
+font-weight: 600;
+padding-bottom: 10px;
+border-bottom: 1px solid #e6e6e6;
+}
+
+.form form{
+padding: 20px 0;
+}
+.form form .error{
+    color: #721c24;
+    background-color: #f8d7d5;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detail .name-details{
+    display: flex;
+    justify-content: space-between;
+}
+.detail .field{
+    display: flex;
+    flex-direction: column;
+
+}
+label{
+    margin: 5px 0px;
+    text-transform: capitalize;
+    color: #333;
+    opacity: .9;
+}
+input{
+padding: 5px 10px;
+border-radius: 5px;
+border: 2px solid #e6e6e6;
+outline: none;
+}
+input:focus{
+    border: 2px solid #5f5e5e;
+}
+input::placeholder{
+    color: #535353;
+    opacity: .9;
+    text-transform: capitalize;
+}
+.upload{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.upload input{
+    border: none;
+    padding: 5px 7px;
+    font-size: 15px;
+}
+.submit{
+    margin-top: 10px;
+}
+.submit input{
+    margin: 5px 0px;
+    padding: 6px 7px;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 400;
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    
+}
+
+.footer{
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.footer  a {
+    color: #333;
+}
+.footer  a:hover {
+    text-decoration: underline;
+}
+
+
+.users{
+    padding: 25px 30px;
+
+}
+
+.users header,.users-list a{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+:is(.users,.users-list ) .contnet{
+    display: flex;
+    align-items: center;
+}
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+.users header .content img{
+    height: 50px;
+    width: 50px;
+}
+:is(.users,.users-list ) .details{
+margin-left: 15px;
+color: #000;
+}
+:is(.users,.users-list ) .details span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.users header .logout{
+    color: #fff;
+    padding: 7px 15px;
+    background-color: #333;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.users .search{
+margin: 20px 0PX;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+}
+.users .search .text{
+    font-size: 18px;
+}
+ .se{
+    position: absolute;
+    height: 42px;
+    width: 88%;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    /* opacity: 0; */
+    
+
+}
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: #333;
+    background: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease;
+
+}
+.users .search button.active{
+    color: #fff;
+    background: #333;
+
+}
+.users-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+:is(.users-list,.chat-box)::-webkit-scrollbar{
+    width: 0;
+}
+
+.users-list a{
+     padding-right: 15px;
+     margin-bottom: 10px;
+     page-break-after: 10px;
+     border-bottom-color: #f1f1f1;
+}
+.users-list a:last-child{
+    border: none;
+    margin-bottom: 0px;
+}
+.users-list a .contnet img{
+    height: 40px;
+    width: 40px;
+}
+.users-list a .contnet p {
+color: #67676a;
+}
+.users-list  a .status-dot{
+    color: #468669;
+    font-size: 12px;
+}
+.users-list  a .status-dot.offline{
+  color: #ccc;  
+}
+
+
+
+
+
+
+.chat-area header{
+    display: flex;
+    padding: 18px 30px;
+    align-items: center;
+}
+
+.chat-area header img{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+
+.chat-area header .back-icon{
+    font-size: 18px;
+    color: #333;
+}
+.chat-area header span{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.chat-box{
+    overflow-y: auto;
+    height: 450px;
+    background-color: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0/5%),
+    inset 0 -32px 32px -32px rgb(0 0 0/5%);
+}
+.chat-box .chat{
+    margin: 15px 0;
+}
+.chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: inset 0 0 -32px rgb(0 0 0/8%),
+    inset 0 16px 16px -16px rgb(0 0 0/10%);
+}
+.chat-area .outgoing{
+    display: flex;
+}
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+.outgoing .details p {
+   background: #333; 
+   color: #fff;
+   border-radius: 18px 18px 0 18px;
+}
+.chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-box .incoming img{
+height: 35px;
+width: 35px;
+}
+.incoming .details{
+   margin-left: 10px; 
+   margin-right: auto;
+   max-width: calc(100% - 130px);
+}
+.chat-box .incoming .details p {
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 18px 0;
+}
+
+.typing-area{
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.typing-area input{
+    height: 45px;
+    width: calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px;
+    outline: none;
+}
+.typing-area button{
+    width: 55px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background: #333;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+ .error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
